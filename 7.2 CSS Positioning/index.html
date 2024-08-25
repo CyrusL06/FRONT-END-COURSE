@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+
+STATIC   == HTML default flow
+
+RELATIVE == pOSTION RELATIVE TO  default position
+
+ABSOLUTE == Position relative to the positioned ancestor 
+            OR Top left corner of webpage
+
+FIXED    == Postion relative to top left corner of browser window
+            Stays at LEFT
+
+Z-INDEX == Determine which element goes in front in Z axsi           
+-->
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /* Write your code here */
+    .red-circle{
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      /* Why is it top when its at bottom??? */
+      
+      top: 150px;
+      left: 250px;
+    }
+
+    .blue-box{
+      width: 500px;
+      height: 300px;
+      background-color: blue;
+      position: relative;
+      top: 200px;
+      left: 200px;
+      
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>
